@@ -40,10 +40,12 @@ p {
 
 a {
   color: #fff;
-  text-shadow: #000 1px;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black;
   font-family: "Poetsen One", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .quote {
@@ -54,9 +56,15 @@ a {
 }
 
 /* BUTTONS */
+
 .button_b {
   border-radius: 8px;
   background: #000;
+  padding: 12px 24px;
+}
+
+.button_b:hover {
+  background-color: #222;
 }
 
 .button_w {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/footer.css" />
     <link rel="stylesheet" href="./src/fonts.css" />
     <link rel="stylesheet" href="./src/animations.css" />
+    <link rel="stylesheet" href="./src/responsive.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
       rel="stylesheet"
@@ -36,10 +37,10 @@
         <img src="src/assets/logo-legoland.webp" alt="Logo Legoland" />
       </div>
       <nav>
-        <a href="index.html">Accueil</a>
-        <a href="about.html">A propos</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="contact.html">Contact</a>
+        <a class="a_nav" href="index.html">Accueil</a>
+        <a class="a_nav" href="about.html">A propos</a>
+        <a class="a_nav" href="catalogue.html">Catalogue</a>
+        <a class="a_nav" href="contact.html">Contact</a>
       </nav>
       <div class="buttons">
         <a class="button_b" href="whishlist.html">Créer ma whishlist</a>
@@ -48,22 +49,11 @@
     </header>
     <section class="hero">
       <div class="lego_bar_top">
-        <!-- <img
-          class="brique"
-          src="src/assets/brique.svg"
-          alt="brique qui roule super vite"
+        <img
+          src="src/assets/Vector block logo.svg"
+          alt="briques qui roulent super vite"
         />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" />
-        <img src="src/assets/brique.svg" alt="brique qui roule super vite" /> -->
       </div>
-
       <div class="hero_content">
         <div class="hero_left">
           <img src="src/assets/hero_left.svg" alt="Lego  builder Taj Mahal" />
@@ -76,41 +66,46 @@
           <a class="button_b" href="whishlist.html">Commencer ma whishlist</a>
         </div>
       </div>
-      <div class="lego_bar_top">
-        <img src="src/assets/brique.svg" alt="bg brique lego" />
+      <div class="lego_bar_bot">
+        <img
+          src="src/assets/Vector block2.svg"
+          alt="briques qui roulent super vite"
+        />
       </div>
     </section>
     <section class="services_section">
-      <h2>Fonctionnement du service</h2>
-      <div>
+      <div class="services_content">
+        <h2>Fonctionnement du service</h2>
         <div>
-          <img
-            src="src/assets/logo_wishlist1.svg"
-            alt="Création de la wishlist"
-          />
-          <h3>Création de la wishlist</h3>
+          <div class="service_whishlist">
+            <img
+              src="src/assets/logo_wishlist1.svg"
+              alt="Création de la wishlist"
+            />
+            <h3>Création de la wishlist</h3>
+          </div>
+          <div class="service_delivery">
+            <img
+              src="src/assets/logo_delivery.svg"
+              alt="Réception des sets à domicile"
+            />
+            <h3>Réception des sets à domicile</h3>
+          </div>
+          <div class="service_exchange">
+            <img
+              src="src/assets/logo_exchange.svg"
+              alt="Échange ou achat des sets à la fin de l’abonnement"
+            />
+            <h3>Échange ou achat des sets à la fin de l’abonnement</h3>
+          </div>
         </div>
-        <div>
-          <img
-            src="src/assets/logo_delivery.svg"
-            alt="Réception des sets à domicile"
-          />
-          <h3>Réception des sets à domicile</h3>
-        </div>
-        <div>
-          <img
-            src="src/assets/logo_exchange.svg"
-            alt="Échange ou achat des sets à la fin de l’abonnement"
-          />
-          <h3>Échange ou achat des sets à la fin de l’abonnement</h3>
-        </div>
+        <a class="button_w" href="about.html">Plus d'informations</a>
       </div>
-      <a class="button_w" href="about.html">Plus d'informations</a>
     </section>
     <section class="advantages_section">
       <h2>Avantages du service</h2>
       <div class="grid_advantages">
-        <div class="bg_b">
+        <div class="grid_item1">
           <h3>Faites des économies à l’achat.</h3>
           <p>
             Bénéficiez d’une réduction sur le prix d’achat d’un set après votre
@@ -118,16 +113,12 @@
             auprès de LegoLand.
           </p>
         </div>
-        <div>
-          <img src="src/assets/savings_img.svg" alt="Lego bucks" />
-        </div>
-        <div>
-          <img
-            src="src/assets/lego_architecture 1.svg"
-            alt="Set Lego Architecture"
-          />
-        </div>
-        <div class="bg_y">
+        <img src="src/assets/savings_img.svg" alt="Lego bucks" />
+        <img
+          src="src/assets/lego_architecture 1.svg"
+          alt="Set Lego Architecture"
+        />
+        <div class="grid_item2">
           <h3>Accédez à une large gamme de sets.</h3>
           <p>
             Découvrez et accédez à plus de 150 sets différents ! Trouvez votre
@@ -135,7 +126,7 @@
             Architecture qui contient les plus beaux monuments du monde entier.
           </p>
         </div>
-        <div class="bg_b">
+        <div class="grid_item1">
           <h3>Bénéficiez d’un abonnement flexible</h3>
           <p>
             Choisissez l’abonnement le plus adapté à votre profil parmi nos
@@ -153,39 +144,51 @@
     </section>
     <section class="feedback_section">
       <h2>Ce qu’en pensent nos clients</h2>
-      <div>
-        <div>
+      <div class="feedback_content">
+        <div class="card">
           <div>
             <img src="src/assets/client_photo.svg" alt="CLient photo 1" />
             <p>FirstName LastName</p>
           </div>
           <div class="stars">
             <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
           </div>
           <p class="quote">
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.”
           </p>
         </div>
-        <div>
+        <div class="card">
           <div>
             <img src="src/assets/client_photo2.svg" alt="Client photo 2" />
             <p>FirstName LastName</p>
           </div>
           <div class="stars">
             <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
           </div>
           <p class="quote">
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium.”
           </p>
         </div>
-        <div>
+        <div class="card">
           <div>
             <img src="src/assets/client_photo3.svg" alt="Client photo 3" />
             <p>FirstName LastName</p>
           </div>
           <div class="stars">
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
+            <img src="src/assets/star_repeat.svg" alt="Notation" />
             <img src="src/assets/star_repeat.svg" alt="Notation" />
           </div>
           <p class="quote">
@@ -195,34 +198,59 @@
         </div>
       </div>
     </section>
-    <section class="popular_section">
+    <section class="popular_sets_section">
       <h2>Nos sets les plus populaires</h2>
-      <div>
-        <div>
-          <img src="" alt="" />
+      <div class="popular_sets">
+        <div class="set">
+          <img
+            src="src/assets/popular_section/set1.svg"
+            alt="Set Lego Bugatti Chiron"
+          />
           <p>Bugatti Chiron</p>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="set">
+          <img
+            src="src/assets/popular_section/set2.svg"
+            alt="Set Lego Porsche 911 GT RS"
+          />
           <p>Porsche 911 GT RS</p>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="set">
+          <img
+            src="src/assets/popular_section/set3.svg"
+            alt="Set Lego fontaine de Trevi"
+          />
           <p>Fontaine de Trevi</p>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="set">
+          <img
+            src="src/assets/popular_section/set4.svg"
+            alt="Set Lego ville de Londres"
+          />
           <p>Ville de Londres</p>
         </div>
       </div>
       <a class="button_w" href="catalogue.html">Commencer ma whishlist</a>
     </section>
     <footer>
-      <div><img src="src/assets/brique.svg" alt="bg brique lego" /></div>
-      <div class="lego_bar_top"></div>
+      <!-- <div class="lego_bar_top">
+        <img src="src/assets/lego_bar_top.svg" alt="bg brique lego" />
+      </div> -->
       <div class="footer_content">
-        <img src="./src/assets/logo-legoland.webp" alt="Logo Legoland" />
-        <nav>
+        <div class="logo">
+          <img
+            class="brick_repeat"
+            src="src/assets/brique.svg"
+            alt="Brique Lego"
+          />
+          <img
+            class="brick_repeat"
+            src="src/assets/brique.svg"
+            alt="Brique Lego"
+          />
+          <img src="src/assets/logo-legoland.webp" alt="Logo Legoland" />
+        </div>
+        <nav class="nav_foo">
           <a href="CGV">CGV</a>
           <a href="Mentions légales">Mentions légales</a>
           <a href="Politique de confidentialité"

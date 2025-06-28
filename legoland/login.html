@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./src/header.css" />
     <link rel="stylesheet" href="./src/footer.css" />
     <link rel="stylesheet" href="./src/fonts.css" />
+    <link rel="stylesheet" href="./src/animations.css" />
+    <link rel="stylesheet" href="./src/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legoland</title>
   </head>
@@ -26,10 +36,10 @@
         <img src="src/assets/logo-legoland.webp" alt="Logo Legoland" />
       </div>
       <nav>
-        <a href="index.html">Accueil</a>
-        <a href="about.html">A propos</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="contact.html">Contact</a>
+        <a class="a_nav" href="index.html">Accueil</a>
+        <a class="a_nav" href="about.html">A propos</a>
+        <a class="a_nav" href="catalogue.html">Catalogue</a>
+        <a class="a_nav" href="contact.html">Contact</a>
       </nav>
       <div class="buttons">
         <a class="button_b" href="whishlist.html">Créer ma whishlist</a>
@@ -37,11 +47,24 @@
       </div>
     </header>
     <footer>
-      <div><img src="src/assets/brique.svg" alt="bg brique lego" /></div>
-      <div class="lego_bar_top"></div>
+      <!-- <div class="lego_bar_top">
+        <img src="src/assets/brique.svg" alt="bg brique lego" />
+      </div> -->
       <div class="footer_content">
-        <img src="./src/assets/logo-legoland.webp" alt="Logo Legoland" />
-        <nav>
+        <div class="logo">
+          <img
+            class="brick_repeat"
+            src="src/assets/brique.svg"
+            alt="Brique Lego"
+          />
+          <img
+            class="brick_repeat"
+            src="src/assets/brique.svg"
+            alt="Brique Lego"
+          />
+          <img src="src/assets/logo-legoland.webp" alt="Logo Legoland" />
+        </div>
+        <nav class="nav_foo">
           <a href="CGV">CGV</a>
           <a href="Mentions légales">Mentions légales</a>
           <a href="Politique de confidentialité"

@@ -39,13 +39,16 @@ p {
 }
 
 a {
-  color: #fff;
-  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
-    -1px 1px 0 black;
   font-family: "Poetsen One", sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+}
+
+.a_nav {
+  color: #fff;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black;
 }
 
 .quote {
@@ -58,17 +61,28 @@ a {
 /* BUTTONS */
 
 .button_b {
+  color: #fff;
   border-radius: 8px;
   background: #000;
   padding: 12px 24px;
+  text-decoration: none;
 }
 
 .button_b:hover {
-  background-color: #222;
+  opacity: 80%;
+}
+.button_w:hover {
+  opacity: 80%;
 }
 
 .button_w {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   border-radius: 8px;
   border: 2px solid #000;
   background: #fff;
+  color: #000;
 }

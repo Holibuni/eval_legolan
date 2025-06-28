@@ -3,3 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100wh;
+  align-items: center;
+  border-top: 5px solid #000;
+  flex: 1 0 0;
+}
+
+.footer_content {
+  display: flex;
+  padding: 32px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav_foo {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.nav_foo > a {
+  color: #000;
+}
+
+.social_medias {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 32px;
+}

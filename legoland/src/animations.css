@@ -7,11 +7,10 @@
 .lego_bar_top {
   width: 100%;
   position: absolute;
-
   top: -6%;
   left: -100%;
   z-index: 0;
-  animation: defilement 6s linear infinite alternate;
+  animation: defilement 15s linear infinite alternate;
 }
 @keyframes defilement {
   0% {
@@ -23,12 +22,13 @@
 }
 
 .lego_bar_bot {
+  width: 100%;
   position: absolute;
   transform: rotateX(180deg);
   top: 100%;
-  right: 0;
+  left: -100%;
   z-index: 0;
-  animation: defilement 6s linear infinite alternate-reverse;
+  animation: defilement 15s linear infinite alternate-reverse;
 }
 @keyframes defilement {
   0% {
@@ -36,5 +36,22 @@
   }
   100% {
     transform: translateX(50%);
+  }
+}
+
+.lego_bar_foo {
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  left: -100%;
+  z-index: 0;
+  animation: defilement 15s linear infinite alternate;
+}
+@keyframes defilement {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }

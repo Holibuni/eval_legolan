@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 768px) {
   body {
     width: 100%;
-    display: block;
   }
 
   .trucsquibougentpastropcommejeveux {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
     gap: 20px;
-    width: fit-content;
   }
 
   .logo {
@@ -34,9 +34,36 @@
   .button_b {
     display: none;
   }
-}
-@media screen and (min-width: 1024px) {
-  .burger {
-    display: none;
+
+  /* .grid_advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .grid_item1,
+  .grid_item2,
+  .grid_item_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  .grid_item_img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  } */
+
+  @media screen and (min-width: 1024px) {
+    .burger {
+      display: none;
+    }
   }
 }

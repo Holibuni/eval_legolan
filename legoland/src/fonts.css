@@ -60,7 +60,8 @@ a {
 
 /* BUTTONS */
 
-.button_b {
+.button_b,
+.button_b_whishlist {
   color: #fff;
   border-radius: 8px;
   background: #000;
@@ -68,7 +69,8 @@ a {
   text-decoration: none;
 }
 
-.button_b:hover {
+.button_b:hover,
+.button_b_whishlist:hover {
   opacity: 80%;
 }
 .button_w:hover {

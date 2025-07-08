@@ -7,7 +7,7 @@
 .lego_bar_top {
   width: 100%;
   position: absolute;
-  top: -6%;
+  top: -5%;
   left: -100%;
   z-index: 0;
   animation: defilement 15s linear infinite alternate;
